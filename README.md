@@ -36,6 +36,27 @@ The exploratory data analysis (EDA) conducted in this project focuses on underst
 - **Sales Correlation**: Exploring the relationship between sales and customer footfall to inform marketing strategies.
 - **Assortment and Competitor Analysis**: Evaluating how assortment types and competitor distance affect sales performance.
 
+## Logging
+
+This project utilizes logging to track the analysis process and ensure traceability. The logs are stored in the `analysis.log` file, which captures key events during the execution of the analysis, including:
+
+- Start and end of the analysis process.
+- Successful loading of datasets.
+- Merging of data.
+- Display of the first few rows of the merged dataset.
+
+### Log File Example
+
+The `analysis.log` file contains entries formatted with timestamps, log levels, and messages. Here is an example of the log entries:
+
+```
+2025-01-03 09:15:43,198 - INFO - Starting the customer purchasing behavior analysis.
+2025-01-03 09:15:43,761 - INFO - Loaded training data successfully.
+2025-01-03 09:15:43,786 - INFO - Loaded test data successfully.
+2025-01-03 09:15:43,789 - INFO - Loaded store data successfully.
+2025-01-03 09:15:43,936 - INFO - Merged training data with store data.
+```
+
 ## Future Work
 Future analyses could include predictive modeling to forecast sales based on the identified trends and factors. Additionally, incorporating external data such as economic indicators and demographic information could enhance the understanding of customer purchasing behavior and improve forecasting accuracy.
 
